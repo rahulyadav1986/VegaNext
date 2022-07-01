@@ -1,0 +1,72 @@
+.why_section{
+    width: 100%;
+    .avator_area{
+        width: 100%;
+        padding-right:7rem;
+        position: relative;
+        .avator{
+            display: block;
+            position: relative;
+            z-index: 2;
+            
+        }
+        .a_bg{
+            position: absolute;
+            top: 102px;
+            left: -60px;
+        }
+    }
+    .content_area{
+        width: 100%;
+        padding-left: 3rem;
+        padding-top: 2rem;
+        h3{
+            font-size: 1.8rem;
+            font-family: var(--common-font);
+            font-weight: 700;
+            margin-top: 10px;
+            width: 100%;
+        }
+        p{
+            font-size: 15px;
+            line-height: 25px;
+            margin-top: 10px;
+        }
+        .btn{
+            margin-top: 3.2rem;
+        }
+    }
+}
+
+@media only screen and (max-width: 991px){
+    .why_section{
+        text-align: center;
+        padding-bottom: 10rem;
+        .avator_area{
+           .a_bg{
+            display: none;
+           } 
+        }
+        .content_area{
+            padding-top: 5rem;
+            padding-left: 0;
+            h3{
+                width: 100%;
+                font-size: 3rem;
+            }
+            p{
+                font-size: 14px;
+            }
+        }
+    }
+}
+@media only screen and (max-width: 394px){
+    .why_section{
+        .avator_area{
+            img{
+                width: 100%;
+            }
+        }
+    }
+
+}

@@ -1,0 +1,44 @@
+.our_services_section{
+    width: 100%;
+    padding-bottom: 7rem;
+    position: relative;
+    background-color: VAR(--ternary-color);
+    background-image: url(../../images/s_bg.png);
+    background-position: center;
+    background-repeat: no-repeat;
+    .portion{
+        width: 100%;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        margin-bottom: 3rem;
+        .icon_area{
+            background-color: var(--primary-color);
+            height: 96px;
+        }
+        .label_area{
+            grid-column: 2/4;
+            background-color: #232323;
+            padding-left: 2.5rem;
+            position: relative;
+            &::before{
+                width: 15px;
+                height: 18px;
+                background-color: #232323;
+                position: absolute;
+                top: 0;
+                bottom: 0;
+                left: -10px;
+                margin: auto;
+                content: "";
+                clip-path: polygon(100% 0, 0 50%, 100% 100%);
+            }
+            h3{
+                color: var(--white-color);
+                font-family: var(--common-font);
+                font-weight: 700;
+                font-size: 16px;
+                line-height: 21px;
+            }
+        }
+    }
+}

@@ -1,0 +1,104 @@
+.hero_section{
+    width: 100%;
+    margin-top: -57px;
+    .hero_item{
+        width: 100%;
+        height: 55rem;
+        position: relative;
+        background-color: #161616;
+        img{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            object-fit: cover;
+            opacity: .23;
+        }
+        .content_area{
+            width: 100%;
+            height: 100%;
+            position: absolute;
+            top: 0;
+            left: 0;
+            padding: 0 5rem;
+            
+            h2{
+                color: var(--primary-color);
+                font-size: 5.5rem;
+                text-transform: uppercase;
+                font-weight: 700;
+            }
+            p{
+                color: var(--white-color);
+                font-size: 2.2rem;
+            }
+            .btn{
+                font-size: 2rem;
+                margin-top: 3.5rem;
+            }
+        }
+    }
+    .carousel-control-next, .carousel-control-prev{
+        width: 57px;
+        height: 57px;
+        top: 0;
+        bottom: 0;
+        margin: auto;
+    }
+    .carousel-control-next{
+        right: 20px;
+        left: auto;
+    }
+    .carousel-control-prev{
+        left: 20px;
+        right: auto;
+    }
+    .carousel-control-prev-icon{
+        background-image: url(../images/prev.png);
+        width: 57px;
+        height: 57px;
+        
+    }
+    .carousel-control-next-icon{
+        background-image: url(../images/next.png);
+        width: 57px;
+        height: 57px;
+        
+    }
+}
+
+
+@media only screen and (max-width:991px){
+    .hero_section{
+        margin-top: 0;
+        .hero_item {
+            .content_area{
+                h2{
+                    font-size: 3.5rem;
+                }
+            }
+        }
+    }
+}
+
+@media only screen and (max-width:500px){
+    .hero_section{
+        .carousel-control-next{
+            right: 5px;
+        }
+        .carousel-control-prev{
+            left: 5px;
+        }
+        .carousel-control-prev-icon, .carousel-control-next-icon{
+            width: 30px;
+            height: 30px;
+            background-size: cover;
+        }
+        .carousel-control-next, .carousel-control-prev{
+            width: 30px;
+            height: 30px;
+        }
+    }
+}
+    
